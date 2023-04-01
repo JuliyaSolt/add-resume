@@ -1,0 +1,134 @@
+<div>
+   <div>
+      <h1>Albert Einstein</h1>
+   </div>
+
+   <hr>
+
+   <div>
+      <p><b>birthdate: March 14, 1879</b></p>
+      <p><b>birthplace: Ulm, Kingdom of Württemberg, German Empire</b></p>
+      <p></p><b>deathdate: April 18, 1955</b></p>
+      <p><b>deathplace: Princeton, New Jersey, United States</b></p>
+      <p><b>nationality: Swiss, German, American,</b></p>
+      <p><b>occupation: Theoretical Physicist,</b></p>  
+   </div> 
+
+   <hr>
+   <div>
+      <h3>Known for:</h3>
+         <ul>
+            {{#each known_for}}
+            <li><i>{{this}}</i></li> 
+            {{/each}}
+         </ul> 
+   </div>
+   
+   <div>
+      <h3>Education:</h3>
+         <ul>
+            {{#each education}}
+            <li><b>degree:</b> <i>{{degree}}</i></li> 
+            <li><b>field:</b> <i>{{field}}</i></li> 
+            <li><b>institution:</b> <i>{{institution}}</i></li> 
+            <li><b>year:</b> <i>{{year}}</i></li> 
+            {{/each}}
+      </ul>
+      </div>
+
+   <div>
+      <h3>Notable publications:</h3>
+            <ul>
+               {{#each notable_publications}}
+               <li><b>title:</b> <cite>{{title}}</cite></li> 
+               <li><b>year:</b> <i>{{year}}</i></li> 
+               <li><b>publisher:</b> <i>{{publisher}}</i></li> 
+               {{/each}}
+            </ul>
+   </div>
+
+   <div>
+      <h3>Partners:</h3>
+            <ul> 
+               <li><b>name:</b> <i>Mileva Marić</i></li> 
+               <li><b>relationship:</b> First wife</li> 
+               <li><b>years:</b> 1903-1919</li>        
+            </ul> 
+
+            <br>
+
+            <ul> 
+               <li><b>name:</b> Elsa Einstein</li> 
+               <li><b>relationship:</b>Second wife, also Einstein's first cousin</li> 
+               <li><b>years:</b> 1919-1936</li>        
+            </ul>
+   </div>
+
+   <div>
+      <h4>Awards:</h4>
+            <ul>
+               {{#each awards}}
+               <li><b>title:</b> <i>{{title}}</i></li> 
+               <li><b>year:</b> {{year}}</li> 
+               <li><b>description::</b> {{description}}</li> 
+               {{/each}}
+            </ul>
+   </div>
+
+   <div>
+      <h4>Influences:</h4>
+            <ul>
+               {{#each influences}}
+               <li>{{this}}</li> 
+               {{/each}}
+            </ul>
+   </div>   
+
+   <div>
+      <h4>Influenced:</h4>
+            <ul>
+               {{#each influenced}}
+               <li>{{this}}</li> 
+               {{/each}}
+            </ul>
+   </div>   
+  
+   <hr>
+  
+   <div>
+      <h4>Quotes:</h4>
+            <ul>
+               {{#each quotes}}
+               <li><q>{{this}}</q></li> 
+               {{/each}}
+            </ul>
+   </div>  
+
+   <div>
+      <h5>Major discoveries:</h5>
+            <ul>
+               {{#each major_discoveries}}
+               <li><b>title:</b> <i>{{title}}</i></li> 
+               <li><b>year:</b> {{year}}</li> 
+               <li><b>description::</b> {{description}}</li> 
+               {{/each}}
+            </ul>
+   </div>
+
+   <div>
+      <h5>Contributions:</h5>
+            <ul>
+               {{#with contributions}}
+               <li><b>title:</b> <i>{{title}}</i></li> 
+               <li><b>description:</b> {{description}}</li> 
+               <li><b>year:</b> {{year}}</li> 
+               <li><b>field:</b> {{field}}</li> 
+               {{/with}}
+            </ul>
+   </div>
+   <hr>
+</div> 
+
+
+
+ 
