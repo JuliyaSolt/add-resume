@@ -1,0 +1,173 @@
+<div>
+   {{#with person}}
+      <div>
+         {{> title data="Emma Johnson"}}
+      </div>
+   {{/with}}
+</div>
+ 
+<div>
+   <p><b> Age: 32 </b></p>
+   <p><b>Gender: Female<b></p>
+</div>
+
+<hr>
+
+<div>
+   
+   <div>
+      {{#with person}}
+         <div>
+            {{> title data="Address:"}}
+         </div>
+      {{/with}}   
+   </div>
+   
+   <div>
+      <address><b>Street: 123 Main St<b></address>
+      <address><b>City: New York</b></adress>
+      <address><b>State: NY</b></address>
+      <address><b>Zip: 10001</b></address>
+      <address><b>Country: USA</b></address>
+   </div>   
+</div>
+
+<div>
+   {{#with person}}
+      <div>
+         {{> title data="Education:"}}
+      </div>
+      <ul>
+         {{#each education}} 
+            <li>degree: {{degree}}</li> 
+            <li>major: {{major}}</li> 
+            <li>university: {{university}}</li> 
+            <li>graduation year: {{graduationYear}}</li> 
+         {{/each}}
+      </ul>
+   {{/with}}
+</div> 
+
+<div>
+   {{#with person}}
+         <div>
+            {{> title data="Work experience:"}}
+         </div>
+      <ul>
+          <li>company: Google</li> 
+          <li>title: Software Engineer</li> 
+          <li>start date: 2012-06-01</li> 
+          <li>end date: 2016-12-31</li> 
+
+          <br>
+
+          <div>
+            <li>
+               responsibilities:
+               <ul>
+                  <li><em>Developed new features for Google Maps</em></li>
+                  <li><em>Worked on improving search algorithms</em></li>
+               </ul>
+            </li>  
+          </div>
+
+          <br>
+         
+         <div>
+            <li>year founded: 1990 </li>  
+            <li>industry: Technology</li> 
+
+            <br> 
+
+            <li>employees:</li>
+            
+               <ul>
+                   <li><em>name: John Smith</em></li>
+                   <li><em>position: CEO</em></li>
+                   <li><em>department: Executive</em></li>
+               </ul>
+         </div> 
+
+          <br>
+
+         <div>  
+            <li>projects:</li>
+               <ul>
+                   <li><em>name: Project Alpha</em></li>
+                   <li><em>description: Developing new software platform</em></li>
+                   <li><em>status: In Progress</em></li>
+               </ul>
+         </div> 
+
+         <br>
+
+         <div>
+            <li>teams:</li>
+               <ul>
+                  <li><em>team name: 'Awesome Team'</em></li>
+               </ul>
+         </div> 
+
+         <br>
+
+         <div>
+            <li>team leader:</li>
+               <ul>
+                   <li><em>name: John Smith</em></li>
+                   <li><em>title: Software Engineer</em></li>
+                   <li>email: john.smith@example.com</li>
+               </ul>
+         </div>  
+
+         <br>
+
+         <div>
+            <li>team members:
+               <ul>
+                   <li><em>name: Alice Johnson</em></li>
+                   <li><em>title: Software Engineer</em></li>
+                   <li>email:alice.johnson@example.com</li>
+
+                    <br>
+
+                   <li>skills:</li>
+                     <ul>  
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                     </ul>
+
+                     <br>
+
+                   <li>projects:</li>
+                     <ul>
+                        <li>name: Project A</li>
+                        <li>description: Lorem ipsum dolor sit amet</li>
+                     </ul>
+
+                     <br>
+
+                   <li>technologies:</li> 
+                     <ul>
+                        <li>Java</li>
+                        <li>Spring Framework</li>
+                     </ul> 
+
+                     <br>
+
+                   <li>team members:</li> 
+                     <ul>
+                        <li>name: Bob Lee</li>
+                        <li>title: Software Engineer</li>
+
+                         <br>
+
+                        <li>name: Cindy Chen</li>
+                        <li>title: UI Designer</li> 
+                     </ul>               
+               </ul>            
+            </li>    
+         </div>       
+      </ul>  
+   {{/with}}
+</div>
