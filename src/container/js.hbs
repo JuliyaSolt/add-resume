@@ -1,0 +1,70 @@
+<div> 
+   {{#with name}}
+      <h1>{{> title data="JavaScript" big=true}}</h1>
+      <hr>
+      <h2><p>`JavaScript is a popular high-level, dynamic, and interpreted programming language.`</p></h2>
+   {{/with}}
+      <div>
+         <h3>HISTORY</h3>
+         {{#with history}}
+         <em>({{year}} {{founder}})</em>
+         {{/with}}
+            <hr>
+               <div> 
+                  <ul>
+                     <h4>TYPES:</h4>
+                     {{#each types}} 
+                     <li>
+                        {{this}}
+                     </li>
+                     {{/each}}
+                  </ul>   
+               </div> 
+               <hr>
+               <div>
+                  <ul>
+                     <h4>SYNTAX:</h4>
+                     {{#each syntax }}
+                     <li>{{this}}</li>
+                     {{/each}}   
+                  </ul>
+               </div>
+               <hr>
+               <div>
+                  <ul>
+                     <h4>FEATURES:</h4>
+                     {{#each  features }}
+                     <li>{{this}}</li>
+                     {{/each}}
+                  </ul>
+               </div>
+               <hr>
+               <div>
+                  <ul>
+                     <h4>LIBRARIES:</h4>
+                     {{#each libraries }}
+                     <li>{{this}}</li>
+                     {{/each}}
+                  </ul>
+               </div>
+               <hr>
+               <div>
+                  <ul>
+                     <h4>TOOLS:</h4>
+                     {{#each tools}}
+                     <li>{{this}}</li>
+                     {{/each}}
+                  </ul>
+               </div>
+               <hr>
+               <div>
+                  <ul>
+                     <h4>COMMUNITY:</h4>
+                     {{#each community}}
+                     <li>{{name}} ({{type}})</li>
+                     {{/each}}
+                  </ul>
+               </div>  
+      <div>
+   </div>  
+</div> 
