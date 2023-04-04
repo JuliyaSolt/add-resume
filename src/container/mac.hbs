@@ -1,0 +1,86 @@
+<div> 
+   {{#with name}}
+      <h1>{{> title data="Apple MacBook Pro" big=true}}</h1>
+      <h2><p>The ultimate notebook for power users</p></h2>
+      <p><b>Computers & Tablets</b></p>
+      <p><b>PRICE:1999,99</b></p>
+      <hr>
+   {{/with}}
+      <div>
+         <h3>PROCESSOR:</h3>
+            <hr>
+               <div> 
+                  <ul>
+                     {{#each features.processor}} 
+                     <li>
+                        {{this}}
+                     </li>
+                     {{/each}}
+                  </ul>   
+               </div> 
+               <hr>
+               <div>
+                  <ul>
+                     <h4>MEMORY:</h4>
+                     {{#each features.memory}}
+                     <li>{{this}}</li>
+                     {{/each}}   
+                  </ul>
+               </div>
+               <hr>
+               <div>
+                  <ul>
+                     <h4>STORAGE:</h4>
+                     {{#each features.storage}}
+                     <li>{{this}}</li>
+                     {{/each}}
+                  </ul>
+               </div>
+               <hr>
+               <div>
+                  <ul>
+                     <h4>DISPLAY:</h4>
+                     {{#each features.display}}
+                     <li>{{this}}</li>
+                     {{/each}}
+                  </ul>
+               </div>
+               <hr>
+               <div>
+                  <ul>
+                     <h4>GRAPHICS:</h4>
+                     {{#each features.graphics}}
+                     <li>{{this}}</li>
+                     {{/each}}
+                  </ul>
+               </div>
+               <hr>
+               <div>
+                  <p><b><center>PORTS:</center></b></p>
+               <p>The 'Apple MacBook Pro' has four ports (Thunderbolt 3).The main features are:Charging,Display Port,<wbr>Thunderbolt (up to 40 Gbps),USB 3.1 Gen 2 (up to 10 Gbps)/Type:HDMI(1).</p>
+               </div>  
+<table class="table" <caption><center><b>FEATURES</b></center></caption>>
+
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Battery</th>
+      <th scope="col">Weight</th>
+      <th scope="col">Operating system</th> 
+      <th></th>
+      <th></th>       
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <tr>
+      <th scope="row"></th>
+      <td>Lithium Polymer,100 Wh,Up to 11 hours</td>
+      <td>4.3 pounds(height: 0.64 inch,
+		  width: 14.09 inches,
+		  depth: 9.68 inches)</td>
+      <td>macOS (Apple Magic Keyboard, 99.99$/Apple Magic Mouse 2, 79.99$/USB-C to USB Adapter, 19.99$)</td> 
+    </tr>
+    </table>
+      <div>
+   </div>  
+</div> 
