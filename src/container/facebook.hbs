@@ -1,0 +1,90 @@
+<div> 
+   <h1 class="display-1 text primary text-center text-uppercase">{{name}}</h1>
+   <div>
+      {{#each users}}
+         <div class="card">
+            <div class="card-body">
+            <ul>
+               <li>
+                  <h2class="display-5"></h2> 
+                  <div class="text-center display-6 text-uppercase">
+                     {{name}}: age ({{age}}) / id ({{id}})
+                  </div>
+
+                  <br>
+
+                  {{#each friends}}
+                     <div class="text-dark">{{name}}: id({{id}}) / age({{age}}) / gender({{gender}})
+                        {{#each mutual_friends}}
+                           <div class="card">
+                              <div class="card-body">
+                              <p class="text-end">
+                              {{name}}: id{{id}} / gender({{gender}}) / ({{age}})
+                              </p>
+                           </div>
+                           </div>
+                        <br>
+                        <br>
+                        {{/each}}
+
+                        {{#each groups}}
+                        <h3 class="display-6 text-center text-uppercase">Groups</h3>
+                           <div class="text-uppercase text-dark">
+                              <p class="text-success">{{name}}</p>
+                           </div>
+                           <p class="text-success">
+                              ({{description}})
+                           </p>
+                        
+                           {{#each members}}
+                              <div class="card">
+                                 <div class="card-body">
+                                    <p class="text-end text-dark">
+                                       {{name}}:
+                                       id ({{id}})
+                                       gender({{gender}}) / age({{age}})
+                                    </p>
+                                 </div>
+                              </div>
+
+                              <br>
+                              <br>
+
+                           {{/each}}
+                        {{/each}}
+                     </div>
+                 {{/each}}
+
+                 <br>
+
+                   {{#each groups}}
+                   <h6 class=" text-capitalize text-success">{{name}}</h6>
+                   <p class="text-success">
+                        ({{description}})
+                   </p>
+                   {{#each members}}
+                     <div class="card">
+                        <div class="card-body">
+                        <p class="text-center text-dark">
+                        {{name}}:
+                        id ({{id}}) /
+                        ({{gender}}) / age ({{age}})
+                        </p>
+                        </div>
+                     </div>
+                  {{/each}}
+                  {{/each}}
+                  <br>
+
+               </li>
+            </ul>
+            </div>
+         </div>   
+         </div>
+
+         </div>
+         <br>
+         <br>
+      {{/each}}  
+   </div>
+ </div>    
