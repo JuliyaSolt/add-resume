@@ -1,25 +1,6 @@
 <main class="m-1">
    <section>
-      <div class="row m-4">
-         <div class="card">
-            
-            {{#with navigation}}
-            <h3 class=" display-5">{{Logo}}</h3>
-            {{/with}}
-               
-               {{#each navigation.links}}    
-                  <div class="nav justify-content-end">          
-                     <div class="nav-item">
-                        <a href={{href}} class="nav-link">{{text}}</a>       
-                     </div>
-               {{/each}} 
-               <a href="#" class="nav-link disabled">Disabled</a>      
-               </div>
-               </div> 
-
-         </div>                  
-      </div>  
-   
+      
       <hr class="my-5">    
       <div class="col-12">
          {{#with newsBlock}}
@@ -111,22 +92,11 @@
                {{#each buttons}}
                <a href={{link}} class="btn text-bg-primary">{{text}}</a>
                </div>
-               {{/each}}
-            {{/with}}  
-         </div>  
+               {{/each}}     
+         </div> 
+         {{/with}}  
          <hr class="my-5">
-         {{#each footer}}
-         <div class="nav col-2">
-            <div class="m-3">
-               {{#each this}}
-               <div>
-                  <a class="nav-link {{#if @last}} disabled {{/if}}"
-                  href={{this.link}}>{{this.text}}</a>  
-               </div>
-               {{/each}}
-            </div>
-         </div>
-         {{/each}}
+         
    </section>  
 </main>
    
