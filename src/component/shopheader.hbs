@@ -3,11 +3,13 @@
       <div class="card">
             
          {{#with navigation}}
+         {{#if Logo}}
          <h3 class="display-5">{{Logo}}</h3>
+         {{/if}}
          {{/with}}
                
          {{#each navigation.links}}    
-         <div class="nav justify-content-end">          
+         <div class="nav {{#if Logo}}justify-content-end{{/if}}">          
             <div class="nav-item">
                <a href={{href}} class="nav-link">{{text}}</a>       
             </div>
