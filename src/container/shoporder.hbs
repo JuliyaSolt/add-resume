@@ -62,8 +62,12 @@
                         <div class="col-12">
                           {{#each ../switch}}    
                             <div class="form-check form-switch py-2">
-                              <label class="form-check-label">{{text}}</label>
-                              <input name="isActive" type="checkbox" class="form-check-input" value="{{isActive}}">{{isActive}}
+                              <label class="form-check-label"></label>
+                              {{#if isActive}}
+                              <input type="checkbox" class="form-check-input" value="{{isActive}}">{{text}}
+                              {{else}} 
+                              <input type="checkbox" class="form-check-input" value="{{isActive}}">{{text}}
+                              {{/if}}
                             </div>
                           {{/each}}
                         </div>
