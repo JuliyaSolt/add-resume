@@ -5,7 +5,7 @@
          <div class="col-8">
             <div class="breadcrumb">
             {{#each breadcrumb}}
-                  <a class='breadcrumb-item {{#if @last}} active {{/if}}'
+                  <a class="breadcrumb-item {{#if @last}} active {{/if}}"
                   href={{url}}> {{name}}</a>
                {{/each}}          
             </div>        
@@ -18,13 +18,13 @@
                 <div class="row g-4"> 
                    <div class="col-6 p-0 ms-2">
                       <div class="card border-white" > 
-                     <img class='card-img' src='{{productData.img}}'></a>
+                     <img class="card-img" src="{{productData.img}}"></a>
                         <div class="card mt-3">
-                           <div class='card-body'>
-                           <h6 class='card-title mt-3'>{{productData.info.title}}</h6>
+                           <div class="card-body">
+                           <h6 class="card-title mt-3">{{productData.info.title}}</h6>
                            {{productData.info.about}}
                            {{description}}
-                            h4 class="pt-1">{{productData.info.price}} </h4>
+                           <h4 class="pt-1">{{productData.info.price}} </h4>
                            {{#each productData.info.category}}
                            {{#if isNew}}<span class="badge rounded-pill text-bg-primary p-1">{{name}}</span>{{/if}}
                            {{#if isHot}}<span class="badge rounded-pill text-uppercase text-bg-warning p-1 text-white">{{name}}!</span>{{/if}}
@@ -37,7 +37,7 @@
                   
             <div class="col-5 ms-4">
                   <div class="card mb-3 border-white">
-                    <table class='table'> 
+                    <table class="table"> 
                       {{#with productData.item}}
                         <thead>
                           <tr>
@@ -66,18 +66,18 @@
                   </div>
 
                   {{#with productData.param}}                  
-                    <div class='card mb-5'>
-                      <div class='list-group'>
-                          <div class='card-header'>{{title}}</div>  
+                    <div class="card mb-5">
+                      <div class="list-group">
+                          <div class="card-header">{{title}}</div>  
                         {{#each list}}      
-                          <div class='list-group-item'>{{this}}</div>
+                          <div class="list-group-item">{{this}}</div>
                         {{/each}}
                       </div>
                     </div> 
                   {{/with}}
                   
                   {{#with productData.alert}}
-                    {{#if isError}}<span class="alert alert-danger ">{{text}}</span>{{/if}}
+                    {{#if isError}}<span class="alert alert-danger">{{text}}</span>{{/if}}
                   {{/with}}  
             </div>
         </div>
@@ -86,15 +86,15 @@
   </section>
 
     <section class="mb-5">
-    <div class='card mb-5'>    
+    <div class="card mb-5">    
       <div class="card-body pb-0">
         <div class="row g-8">  
           {{#each productData.actionList}}
             <div class="col-3  text-center ">
-              <p {{#if isWarning}} class='btn btn-warning text-white'{{/if}}
-                {{#if isError}} class='btn btn-outline-danger'{{/if}}
-                {{#if isSuccess}} class='btn btn-success'{{/if}}
-                {{#if isGood}} class='btn btn-outline-success'{{/if}}>
+              <p {{#if isWarning}} class="btn btn-warning text-white"{{/if}}
+                {{#if isError}} class="btn btn-outline-danger"{{/if}}
+                {{#if isSuccess}} class="btn btn-success"{{/if}}
+                {{#if isGood}} class="btn btn-outline-success"{{/if}}>
                 {{name}}
               </p>
             </div>
@@ -104,8 +104,8 @@
     </div>
   </section>
          
-   <hr class='my-5 text-white'>
-  <hr class='my-5 '>
+   <hr class="my-5 text-white">
+  <hr class="my-5">
 
   <section>
     <h3 class="text-center mb-3">{{goodsBlock.title}}</h3>
