@@ -19,14 +19,14 @@
                    <div class="col-6 p-0 ms-2">
                       <div class="card border-white" > 
                      <img class="card-img" src="{{productData.img}}"></a>
-                        <div class="card mt-3">
+                        <div class="card mt-3 me-0">
                            <div class="card-body">
                            <h6 class="card-title mt-3">{{productData.info.title}}</h6>
                            {{productData.info.about}}
                            {{description}}
-                           <h4 class="pt-1">{{productData.info.price}} </h4>
+                           <h4 class="mt-2">{{productData.info.price}} </h4>
                            {{#each productData.info.category}}
-                           {{#if isNew}}<span class="badge rounded-pill text-bg-primary p-1">{{name}}</span>{{/if}}
+                           {{#if isNew}}<span class="badge rounded-pill text-bg-primary ms-0">{{name}}</span>{{/if}}
                            {{#if isHot}}<span class="badge rounded-pill text-uppercase text-bg-warning p-1 text-white">{{name}}!</span>{{/if}}
                            {{#if isBonus}}<span class="badge rounded-pill text-bg-info p-1 text-white">{{name}}</span>{{/if}}
                            {{/each}}
@@ -66,7 +66,7 @@
                   </div>
 
                   {{#with productData.param}}                  
-                    <div class="card mb-5">
+                    <div class="card mb-5 mt-1">
                       <div class="list-group">
                           <div class="card-header">{{title}}</div>  
                         {{#each list}}      
@@ -113,7 +113,7 @@
   </section>       
          <hr class="my-5"> 
          {{> shopaction}}
-         <hr class="my-5">     
+              
    </section>  
 </main>
    

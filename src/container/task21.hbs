@@ -2,45 +2,45 @@
    <section> 
       <div class="card">
          <div class="body">
-            <div class="card">
+            <div class="card ms-3 me-3 mt-3 mb-3">
                <div class="body">
                   {{#with heading.main}}
-                  <h1 class="display-1 text primary "> {{title}}</h1> 
-                  <p class="text secondary">{{text}}</p>
+                  <h1 class="display-1 text primary ms-3 "> {{title}}</h1> 
+                  <p class="text secondary ms-3">{{text}}</p>
 
                   {{#with button_text}}
-                  <p><button class="btn btn-primary btn-lg">{{solid}}</button></p>
-                  <p><button class=" btn btn-outline-info btn-sm text-info">{{outline}}</button></p>
+                  <p><button class="btn btn-primary btn-lg ms-3">{{solid}}</button></p>
+                  <p><button class=" btn btn-outline-info btn-sm text-info ms-3">{{outline}}</button></p>
                   {{/with}}
                   {{/with}}
                </div>
             </div>  
             <br>
             <br>
-            <div class="card">
+            <div class="card ms-3 me-3 mb-3">
                <div class="body">
                   {{#with heading.second}}
-                  <h2 class="display-1 text primary "> {{title}}</h2> 
-                  <p class="text secondary">{{text}}</p>
+                  <h2 class="display-1 text primary ms-3"> {{title}}</h2> 
+                  <p class="text secondary ms-3">{{text}}</p>
 
                   {{#with button_text}}
-                  <p><button class="btn btn-secondary btn-lg">{{solid}}</button></p>
-                  <p><button class=" btn btn-outline-light btn-sm text-muted">{{outline}}</button></p>
+                  <p><button class="btn btn-secondary btn-lg ms-3">{{solid}}</button></p>
+                  <p><button class=" btn btn-outline-light btn-sm text-muted ms-3">{{outline}}</button></p>
                   {{/with}}
                   {{/with}}
                </div>
             </div>
             <br>
             <br>  
-            <div class="card">
+            <div class="card ms-3 me-3">
                <div class="body">
                   {{#with heading.subblock}}
-                  <h2 class="display-1 text primary "> {{title}}</h2> 
-                  <p class="text secondary">{{text}}</p>
+                  <h2 class="display-1 text primary ms-3"> {{title}}</h2> 
+                  <p class="text secondary ms-3">{{text}}</p>
 
                   {{#with button_text}}
-                  <p><button class="btn btn-dark btn-lg">{{solid}}</button></p>
-                  <p><button class="btn btn-outline-dark btn-sm text-dark">{{outline}}</button></p>
+                  <p><button class="btn btn-dark btn-lg ms-3">{{solid}}</button></p>
+                  <p><button class="btn btn-outline-dark btn-sm text-dark ms-3">{{outline}}</button></p>
                   {{/with}}
                   {{/with}}
                </div>
@@ -52,28 +52,28 @@
       <br>
       <br>
       <div class="card">
-         <div class="body">
-            <div class="card">
-               <div class="body">
+         <div class="card-body">
+            <div class="card mb-4 mt-4 me-3 ms-3">
+               <div class="card-body">
                   {{#with  nested_display}}
-                  <h1 class="display-1 text primary "> {{title}}</h1> 
+                  <h1 class="display-1 text primary"> {{title}}</h1> 
                   <p class="text secondary">{{text}}</p>
 
                   {{#with button_text}}
-                  <p><button class="btn btn-primary btn-lg">{{solid}}</button></p>
-                  <p><button class=" btn btn-outline-info btn-sm text-info">{{outline}}</button></p>
+                  <p><button class="btn btn-primary btn-lg ms-2">{{solid}}</button></p>
+                  <p><button class=" btn btn-outline-info btn-sm text-infog pe-2">{{outline}}</button></p>
                   {{/with}}
                   {{/with}}
                </div>
             </div> 
-            <div class="card">
+            <div class="card mb-2">
                <div class="body">
                   {{#with nested_display.children_display}}
-                  <h4 class="display-4 text primary "> {{title}}</h4> 
-                  <p class="text secondary">{{text}}</p>
+                  <h4 class="display-4 text primary ms-3">{{title}}</h4> 
+                  <p class="text secondary ms-3">{{text}}</p>
 
                   {{#with button}}
-                  <p><button class="btn btn-outline-warning btn-lg">{{text}}</button></p>
+                  <p><button class="btn btn-outline-warning btn-lg ms-3">{{text}}</button></p>
                   {{/with}}
                   {{/with}}
                </div>
@@ -97,13 +97,13 @@
             <div class="card">
                <div class="body">
                   {{#with paragraph}}
-                     <h6 class="display-6 text-uppercase">{{title}}</h6> 
-                     <p class="text-dark text-lowercase">{{text}}</p>
+                     <h6 class="display-6 text-uppercase ms-3 mt-3">{{title}}</h6> 
+                     <p class="text-dark text-lowercase ms-3">{{text}}</p>
 
                      {{#with button}}
                      <p><a href="https://github.com/" class="btn btn-link">{{text}}</p>           
                      {{/with}} 
-                     <div class="card">
+                     <div class="card ms-3 me-3 mb-3">
                         <div class="body">
                            <ul class="text-dark">
                               {{#each list_name}}

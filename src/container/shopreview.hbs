@@ -89,7 +89,9 @@
     </div>
 
     <hr class="my-5"> 
-    {{> reviewItem}}
+    {{#each reviewList}}
+        {{> reviewItem}}
+    {{/each}}
     <div class="mt-5">
     {{> shopaction}}
     </div>                      
