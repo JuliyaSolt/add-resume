@@ -1,20 +1,21 @@
-<div>
+<div class="row">
+   <div class="col-12">
    <div>
       {{#with person}}
-         <div>
+         <div class="text-center">
             <h1>{{> title data="Emma Johnson"}}</h1>
          </div>
       {{/with}}
    </div>
-   <div>
+   <div class="ms-4">
       <p><b> Age: 32 </b></p>
       <p><b>Gender: Female<b></p>
    </div>
    <hr>
-   <div>   
+   <div class="ms-4">   
        <h2>{{> title data="Address:"}}</h2>  
    </div>   
-   <div>
+   <div class="ms-4">
       <address><b>Street: 123 Main St<b></address>
       <address><b>City: New York</b></adress>
       <address><b>State: NY</b></address>
@@ -23,7 +24,7 @@
    </div>   
    <div>
       {{#with person}}
-         <div>
+         <div class="ms-4">
           <h3>{{> title data="Education:"}}</h3> 
          </div>
          <ul>
@@ -36,7 +37,7 @@
          </ul>
       {{/with}}
    </div> 
-   <div>
+   <div class="ms-4">
        <h4>{{> title data="Work experience:"}}</h4>
    </div>
     <div>
@@ -130,5 +131,6 @@
                </li>    
           </div>              
        </ul>
+    </div>
     </div>
 </div>   

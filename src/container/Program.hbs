@@ -1,15 +1,15 @@
 <div>
    {{#each program}}
       <div>
-         <h1>{{name}}</h1>
+         <h1 class="ms-3 text-center">{{name}}</h1>
          <br>
       </div>
 
       <div>
          {{#with location}}
-         <h2>{{city}} ({{country}})</h2>
+         <h2 class="text-center">{{city}} ({{country}})</h2>
          {{/with}}
-         <em>{{date}}</em>
+         <em class=" ms-4">{{date}}</em>
       </div> 
       <hr>
       <br>
